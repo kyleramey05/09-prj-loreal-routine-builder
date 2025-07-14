@@ -16,68 +16,77 @@
   </head>
 
   <body>
-    <div class="page-wrapper">
-      <!------- Header / Branding ------->
-      <header class="site-header">
-        <img src="img/loreal-logo.png" alt="L'Oréal Logo" class="logo" />
-        <h1 class="site-title">Smart Routine &amp; Product Advisor</h1>
+    <div class="page-wrapper minimalist-wrapper">
+      <!-- Top Navigation: Menu & Web Search -->
+      <nav class="site-navbar minimalist-navbar">
+        <div class="navbar-left">
+          <!-- Menu and Web Search buttons will be injected by script.js -->
+        </div>
+      </nav>
+
+      <!-- Header / Branding -->
+      <header class="site-header minimalist-header">
+        <img src="img/loreal-logo.png" alt="L'Oréal Logo" class="logo minimalist-logo" />
+        <h1 class="site-title minimalist-title">Smart Routine &amp; Product Advisor</h1>
       </header>
 
-      <!-- Category Filter -->
-      <div class="search-section">
-        <select id="categoryFilter">
-          <option value="" disabled selected>Choose a Category</option>
-          <option value="cleanser">Cleansers</option>
-          <option value="moisturizer">Moisturizers & Treatments</option>
-          <option value="haircare">Haircare</option>
-          <option value="makeup">Makeup</option>
-          <option value="hair color">Hair Color</option>
-          <option value="hair styling">Hair Styling</option>
-          <option value="men's grooming">Men's Grooming</option>
-          <option value="suncare">Suncare</option>
-          <option value="fragrance">Fragrance</option>
-        </select>
-      </div>
+      <main class="main-content minimalist-main">
+        <!-- Category Filter & Search -->
+        <section class="search-section minimalist-search">
+          <select id="categoryFilter" class="minimalist-select">
+            <option value="" disabled selected>Choose a Category</option>
+            <option value="cleanser">Cleansers</option>
+            <option value="moisturizer">Moisturizers & Treatments</option>
+            <option value="haircare">Haircare</option>
+            <option value="makeup">Makeup</option>
+            <option value="hair color">Hair Color</option>
+            <option value="hair styling">Hair Styling</option>
+            <option value="men's grooming">Men's Grooming</option>
+            <option value="suncare">Suncare</option>
+            <option value="fragrance">Fragrance</option>
+          </select>
+        </section>
 
-      <!-- Products Grid -->
-      <div id="productsContainer" class="products-grid"></div>
+        <!-- Products Grid -->
+        <section id="productsContainer" class="products-grid minimalist-products"></section>
 
-      <!-- Selected Products -->
-      <div class="selected-products">
-        <h2>Selected Products</h2>
-        <div id="selectedProductsList"></div>
-        <button id="generateRoutine" class="generate-btn">
-          <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Routine
-        </button>
-      </div>
-
-      <!------- Chat Area ------->
-      <section class="chatbox">
-        <h2>Let's Build Your Routine</h2>
-        <div id="chatWindow" class="chat-window"></div>
-
-        <form id="chatForm" class="chat-form">
-          <label for="userInput" class="visually-hidden">Message</label>
-          <input
-            id="userInput"
-            name="userInput"
-            type="text"
-            placeholder="Ask me about products or routines…"
-            autocomplete="off"
-            required
-          />
-          <button type="submit" id="sendBtn">
-            <i class="fa-solid fa-paper-plane"></i>
-            <span class="visually-hidden">Send</span>
+        <!-- Selected Products & Routine Button -->
+        <section class="selected-products minimalist-selected">
+          <h2 class="minimalist-h2">Selected Products</h2>
+          <div id="selectedProductsList" class="minimalist-list"></div>
+          <button id="generateRoutine" class="generate-btn minimalist-btn">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Routine
           </button>
-        </form>
-      </section>
+        </section>
 
-      <!------- Footer Links ------->
-      <footer class="site-footer">
+        <!-- Chat Area -->
+        <section class="chatbox minimalist-chat">
+          <h2 class="minimalist-h2">Let's Build Your Routine</h2>
+          <div id="chatWindow" class="chat-window minimalist-chat-window"></div>
+
+          <form id="chatForm" class="chat-form minimalist-chat-form">
+            <label for="userInput" class="visually-hidden">Message</label>
+            <input
+              id="userInput"
+              name="userInput"
+              type="text"
+              placeholder="Ask me about products or routines…"
+              autocomplete="off"
+              required
+              class="minimalist-input"
+            />
+            <button type="submit" id="sendBtn" class="minimalist-send-btn">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span class="visually-hidden">Send</span>
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <!-- Footer Links -->
+      <footer class="site-footer minimalist-footer">
         <p>&copy; 2025 L'Oréal. All rights reserved.</p>
-        <nav>
-          <!-- These URLs are placeholders -->
+        <nav class="minimalist-footer-nav">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Use</a>
           <a href="#">Contact</a>
